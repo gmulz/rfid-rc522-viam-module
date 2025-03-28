@@ -74,6 +74,7 @@ class RfidRc522(Generic, EasyResource):
             return {"id": id, "text": text}
         elif command == "write":
             self.reader.write(command["text"])
+            return {"success": True}
         else:
             raise ValueError(f"Invalid command: {command}")
 
