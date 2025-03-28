@@ -1,7 +1,7 @@
 {
   "$schema": "https://dl.viam.dev/module.schema.json",
   "module_id": "viam:rfid-rc522",
-  "visibility": "private",
+  "visibility": "public_unlisted",
   "url": "https://github.com/gmulz/rfid-rc522-viam-module",
   "description": "Modular generic component: rfid-rc522",
   "models": [
