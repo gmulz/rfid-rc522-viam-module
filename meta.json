@@ -1,0 +1,26 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "viam:rfid-rc522",
+  "visibility": "private",
+  "url": "",
+  "description": "Modular generic component: rfid-rc522",
+  "models": [
+    {
+      "api": "rdk:component:generic",
+      "model": "viam:rfid-rc522:rfid-rc522",
+      "short_description": "Provide a short (100 characters or less) description of this model here",
+      "markdown_link": "README.md#model-viamrfid-rc522rfid-rc522"
+    }
+  ],
+  "applications": null,
+  "entrypoint": "reload.sh",
+  "first_run": "",
+  "build": {
+    "build": "rm -f module.tar.gz && tar czf module.tar.gz requirements.txt src/*.py src/models/*.py meta.json setup.sh reload.sh",
+    "path": "module.tar.gz",
+    "arch": [
+      "linux/amd64",
+      "linux/arm64"
+    ]
+  }
+}

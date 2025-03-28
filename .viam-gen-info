@@ -1,0 +1,12 @@
+{
+  "module_name": "rfid-rc522",
+  "namespace": "viam",
+  "language": "python",
+  "resource_type": "component",
+  "resource_subtype": "generic",
+  "model_name": "rfid-rc522",
+  "enable_cloud_build": true,
+  "initialize_git": false,
+  "generator_version": "0.1.0",
+  "generated_on": "2025-03-28T18:22:38.813458Z"
+}
