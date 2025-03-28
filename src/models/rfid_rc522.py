@@ -68,11 +68,11 @@ class RfidRc522(Generic, EasyResource):
         timeout: Optional[float] = None,
         **kwargs
     ) -> Mapping[str, ValueTypes]:
-        command = command["cmd"]
-        if command == "read":
+        command_name = command["cmd"]
+        if command_name == "read":
             id, text = self.reader.read()
             return {"id": id, "text": text}
-        elif command == "write":
+        elif command_name == "write":
             self.reader.write(command["text"])
             return {"success": True}
         else:
