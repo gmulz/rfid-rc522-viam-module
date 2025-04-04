@@ -18,9 +18,7 @@
   "build": {
     "build": "rm -f module.tar.gz && tar czf module.tar.gz requirements.txt src/*.py src/models/*.py meta.json setup.sh reload.sh",
     "path": "module.tar.gz",
-    "arch": [
-      "linux/amd64",
-      "linux/arm64"
-    ]
-  }
+    "arch": ["linux/amd64", "linux/arm64"]
+  },
+  "markdown_link": "README.md"
 }

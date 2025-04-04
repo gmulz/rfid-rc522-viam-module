@@ -1,4 +1,4 @@
-# Module rfid-rc522 
+# Module rfid-rc522
 
 Provide a description of the purpose of the module and any relevant information.
 
@@ -7,44 +7,34 @@ Provide a description of the purpose of the module and any relevant information.
 Provide a description of the model and any relevant information.
 
 ### Configuration
-The following attribute template can be used to configure this model:
 
-```json
-{
-"attribute_1": <float>,
-"attribute_2": <string>
-}
-```
+The module works only with a Raspberry Pi with the following specific configuration of pins:
 
-#### Attributes
-
-The following attributes are available for this model:
-
-| Name          | Type   | Inclusion | Description                |
-|---------------|--------|-----------|----------------------------|
-| `attribute_1` | float  | Required  | Description of attribute 1 |
-| `attribute_2` | string | Optional  | Description of attribute 2 |
-
-#### Example Configuration
-
-```json
-{
-  "attribute_1": 1.0,
-  "attribute_2": "foo"
-}
-```
+| Pin  | Module |
+| ---- | ------ |
+| 24   | SDA    |
+| 23   | SCK    |
+| 19   | MOSI   |
+| 21   | MISO   |
+| 22   | RST    |
+| GND  | GND    |
+| 3.3V | 3.3V   |
 
 ### DoCommand
 
-If your model implements DoCommand, provide an example payload of each command that is supported and the arguments that can be used. If your model does not implement DoCommand, remove this section.
+Two DoCommands are available to read and write an RFID tag. The commands are blocking until a tag is presented.
 
-#### Example DoCommand
+Writing to the tag can accept messages up to
 
 ```json
 {
-  "command_name": {
-    "arg1": "foo",
-    "arg2": 1
-  }
+  "cmd": "read"
+}
+```
+
+```json
+{
+  "cmd": "write",
+  "text": "text-to-write"
 }
 ```
