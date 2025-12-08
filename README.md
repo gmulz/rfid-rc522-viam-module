@@ -1,10 +1,10 @@
 # Module rfid-rc522
 
-Provide a description of the purpose of the module and any relevant information.
+This module provides an interface to the RFID-RC522 component for RFID tag reading/writing. It is based off the Python library `mfrc522` which assumes a specific pin configuration on a Raspberry Pi to connect to the component
 
 ## Model viam:rfid-rc522:rfid-rc522
 
-Provide a description of the model and any relevant information.
+RFID reader component using SPI
 
 ### Configuration
 
