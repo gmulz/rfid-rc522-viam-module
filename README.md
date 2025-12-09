@@ -4,7 +4,7 @@ This module provides an interface to the RFID-RC522 component for RFID tag readi
 
 ## Model viam:rfid-rc522:rfid-rc522
 
-RFID reader component using SPI
+RFID reader component using SPI as the communication bus. Only works with raspberry pi
 
 ### Configuration
 
