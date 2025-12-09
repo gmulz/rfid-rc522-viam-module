@@ -1,13 +1,13 @@
 {
   "$schema": "https://dl.viam.dev/module.schema.json",
-  "module_id": "grant-dev:rfid-rc522",
+  "module_id": "viam:rfid-rc522",
   "visibility": "public_unlisted",
   "url": "https://github.com/gmulz/rfid-rc522-viam-module",
   "description": "Modular generic component: rfid-rc522",
   "models": [
     {
       "api": "rdk:component:generic",
-      "model": "grant-dev:rfid-rc522:rfid-rc522",
+      "model": "viam:rfid-rc522:rfid-rc522",
       "short_description": "Provide a short (100 characters or less) description of this model here",
       "markdown_link": "README.md#model-viamrfid-rc522rfid-rc522"
     }
